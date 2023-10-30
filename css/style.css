@@ -42,7 +42,6 @@ a:focus {
 }
 
 p {
-    margin-bottom: 30px;
     margin-top: 0;
     padding-top: 0;
 }
@@ -109,6 +108,7 @@ h1, h2, h3, h4, h5, h6, figure {
     border-radius: 50%;
     border: 10px solid #fff;
     object-fit: cover;
+    object-position: 0 -40px;
 }
 
 #fh5co-header .bio-photo a:after {
@@ -468,4 +468,51 @@ textarea.form-control {
     opacity: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+.parent__label {
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    content: '';
+    top: 10px;
+    right: 0;
+    width: auto;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: lightseagreen;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-xs-6 {
+        width: 100%;
+    }
+
+    .label {
+        right: 15px;
+    }
+
+    .fh5co-section {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    /*.col-md-12 {*/
+    /*    padding-left: 0;*/
+    /*    padding-right: 0;*/
+    /*}*/
+
+    /*.col-md-4 {*/
+    /*    padding-left: 0;*/
+    /*    padding-right: 0;*/
+    /*}*/
+}
